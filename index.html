@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision VR — Óptica Lavalle</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #111; overflow: hidden; font-family: sans-serif; }
+    #loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 20px; z-index: 100; pointer-events: none; }
+    #patientForm { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; z-index: 50; width: 90%; max-width: 350px; text-align: center; }
+    #patientForm h3 { color: #1b4d3e; margin-bottom: 15px; }
+    #patientNameInput { width: 100%; padding: 10px; margin-bottom: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; }
+    #patientNameSubmit { width: 100%; padding: 10px; background: #1b4d3e; color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; }
+  </style>
+  <script type="module" crossorigin src="/Vision-VR/assets/index-CvitWNpB.js"></script>
+</head>
+<body>
+  <div id="loading">Preparando experiencia VR...</div>
+  
+  <div id="patientForm">
+    <h3>Óptica Lavalle</h3>
+    <input type="text" id="patientNameInput" placeholder="Nombre del paciente..." autocomplete="off" />
+    <button id="patientNameSubmit">Comenzar Prueba</button>
+  </div>
+
+</body>
+</html>
